@@ -1,13 +1,9 @@
-#include <iostream>
-using namespace std;
+#include <stdio.h>
 
-int main(void)
+int main()
 {
-	int a, b;
-
-	cin >> a >> b;
-	cout.precision(10);
-	cout<< a / (double)b << endl;
-
-	return 0;
+    int a, b;
+    scanf("%d %d", &a, &b);
+    printf("%.9f", (double)a/b);
+    return 0;
 }
